@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <div id="bookmarker">
+        <div class="container">
+            <div class="head">
+                <h1>
+                    Bookmarker
+                </h1>
+            </div>
+            <div class="inputs my-5">
+                <div class="intro d-flex justify-content-center align-items-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <h2>
+                        Bookmark your favorite sites
+                    </h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <div class="name">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <p>
+                        Site Name
+                    </p>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Bookmark Name" id="bookName">
+                </div>
+                <div class="name">
+                    <i class="fa-solid fa-link"></i>
+                    <p>
+                        Site URL
+                    </p>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Website URL" id="bookUrl">
+                </div>
+                <button onclick="submit()" id="btnSubmit" type="button" class="btn btn-primary py-2 my-2">
+                    Submit
+                </button>
+            </div>
+            <input type="text" class="form-control my-5 w-75 mx-auto" placeholder="search" id="searchSite" oninput="search(this.value)">
+            <table class="table text-center mx-auto">
+                <thead>
+                    <th>
+                        Index
+                    </th>
+                    <th>
+                        Website Name
+                    </th>
+                    <th>
+                        Visit
+                    </th>
+                    <th>
+                        Update
+                    </th>
+                    <th>
+                        Delete
+                    </th>
+                </thead>
+                <tbody id="tableSites">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>

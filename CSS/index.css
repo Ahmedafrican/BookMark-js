@@ -1,0 +1,85 @@
+/* start of global property */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(255, 192, 203, 0.281);
+}
+/* end of global property */
+
+/* start of header */
+#bookmarker .container .head{
+    margin: 40px auto;
+}
+
+#bookmarker .container .head h1{
+    position: relative;
+    font-family:"Pacifico", cursive;
+    font-size: 50px;
+    width: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+
+#bookmarker .container .head h1::after{
+    position: absolute;
+    content:"";
+    background-color: #fec260;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+#bookmarker .container .head h1:hover::after{
+    height: 70%;
+}
+
+#bookmarker .container .inputs{
+    border-top:2px black dotted ;
+    border-bottom: 2px black dotted;
+    padding: 30px;
+}
+
+#bookmarker .container .inputs .intro i{
+    font-size: 25px;
+    color: green;
+}
+
+#bookmarker .container .inputs .intro h2{
+    font-size: 20px;
+}
+
+#bookmarker .container .inputs .name{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 10px;
+}
+
+#bookmarker .container .inputs span{
+    margin: auto;
+    display: block;
+    width: fit-content;
+    padding:10px 50px;
+    cursor: pointer;
+    color: white;
+    background-color: #d1512d;
+    border-radius: 5px;
+}
+
+
+#bookmarker .container table{
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+}
+
+#btnSubmit{
+    margin: auto !important;
+    display: block;
+}
